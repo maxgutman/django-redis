@@ -93,3 +93,4 @@ class SentinelClient(DefaultClient):
         del(self._client_read)
         self._client_write = None
         self._client_read = None
+        super(SentinelClient, self).close(**kwargs)
